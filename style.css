@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e0e0e0;
+}
+
+.container {
+	color: #000;
+	border-radius: 10px;
+	padding: 20px;
+	font-family: 'Montserrat', sans-serif;
+	max-width: 700px;
+	background: #e0e0e0;
+	box-shadow:  20px 20px 60px #bebebe,
+    -20px -20px 60px #ffffff;
+}
+
+.container > p {
+	font-size: 32px;
+}
+
+.question {
+	width: 75%;
+}
+
+@media (max-width: 576px) {
+	.question {
+		width: 100%;
+		word-spacing: 2px;
+	}
+}
+
+.passed {
+	color: green;
+	background-color: rgba(43, 255, 43, 0.356);
+	padding: 1 rem;
+}
+
+.failed {
+	color: red;
+	background-color: rgba(255, 43, 43, 0.281);
+	padding: 1 rem;
+}
+
+.correct-answer{
+	color: green;
+	background-color: rgba(0, 128, 0, 0.315);
+}
